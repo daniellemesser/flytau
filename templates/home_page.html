@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TSP calculator</title>
+    <h1>TSP calculator</h1>
+<p>Group num: 13<br/><br/>
+
+    Danielle's ID: 213687866<br/><br/>
+
+    Matan's ID: 213250244<br/><br/>
+
+    Shira's ID: 213105307<br/><br/>
+
+    To find the shortest path for (1,1),(-1,-1),(2,3)   <a href="?locations=[(1,1),(-1,-1),(2,3)]">click here</a>
+
+</p>
+</head>
+<body>
+{% if error_message %}
+    <div style="color: red; padding: 10px; border: 1px solid red; margin-top: 20px;">
+        <h2>error!</h2>
+        <p>{{ error_message }}</p>
+         <a href="/">return to home page</a>
+    </div>
+{% endif %}
+</body>
+</html>

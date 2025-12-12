@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The shortest path</title>
+</head>
+ <body>
+  <center>
+ <h1>The shortest path</h1>
+ <h2>Length is {{leng}}</h2>
+        <table style="margin-left: auto; margin-right: auto;" border="2">
+            <tr>
+                <th style="padding: 10px">from</th>
+                <th style="padding: 10px">from</th>
+                <th style="padding: 10px">to</th>
+            </tr>
+            {% for i in range(path|length -1) %}
+                    <tr><td style="padding: 10px"> {{i+1}} </td>
+                        <td style="padding: 10px"> {{path[i]}} </td>
+                        <td style="padding: 10px"> {{path[i+1]}} </td>
+                    </tr>
+
+            {% endfor %}
+        </table>
+     <a href="/">return to home page</a>
+ </center>
+ </body>
+</html>
